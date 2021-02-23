@@ -1,0 +1,132 @@
+<!DOCTYPE>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>EMINEM</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="footer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        </head>
+
+    <body>
+        <div>
+        <audio caudio id="myAudio" preload="auto">
+            <source src="revival.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <img  src="logo.png" onClick="togglePlay()">
+            <ul>
+                <li><a href="https://www.britannica.com/biography/Eminem" target="_blank" onmousedown="virus.play()">biography</a></li>
+                <li><a href="index2.html" target="_blank" onmousedown="s.play()">Albums</a></li>
+                <li><a href="https://www.grammy.com/grammys/artists/eminem/8580" target="_blank" onmousedown="s.play()">Awards</a></li>
+                <li><a href="https://southpawer.com/2017/09/12/eminem-guinness-world-records/" target="_blank" onmousedown="s.play()">World Records</a></a></li>
+            </ul>   
+            
+        </nav>
+        
+        <section class="imahe">
+            <div  class="button">
+                <a href="https://www.youtube.com/user/EminemMusic" target="_blank" onmousedown="welcome.play()" style="color: #fff;;"><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube Channel</a>
+            </div>
+            <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>
+                    <span>E</span>
+                    <span>M</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>E</span>
+                    <span>M</span>
+                </h1>
+            </div>
+            
+       </section>
+       <div>
+        <h2>
+            <center><span>DO<hide>N'T</hide> </span>
+             <span><hide>qu</hide>it</span>
+            </h2></center>
+
+    </div>
+       
+       <footer>
+           <div class="foter-container">
+            <div class="left-col">
+                <center><img src="footer.png" alt="awts gege" class="logo"></center>
+                <center>
+             <div class="social-media">       
+            <a href="https://www.facebook.com/eminem" target="_blank" onmousedown="s.play()"> 
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                   <i class="fa fa-facebook" aria-hidden="true"></i>
+               </a>          
+            <a href="https://twitter.com/Eminem" target="_blank" onmousedown="s.play()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/user/EminemMusic" target="_blank" onmousedown="s.play()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/eminem/?hl=en" target="_blank" onmousedown="s.play()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+
+       <center><p class="right">@ 2020 Web Development Series | Wilson D. Goat All Rights Reserved</p></center>
+    </center>
+    </div>
+    </div>
+    </footer>
+    </body>
+    <script>
+    var myAudio = document.getElementById("myAudio");
+    var isPlaying = false;
+    
+    function togglePlay() {
+      isPlaying ? myAudio.pause() : myAudio.play();
+    };
+    
+    myAudio.onplaying = function() {
+      isPlaying = true;
+    };
+    myAudio.onpause = function() {
+      isPlaying = false;
+    };
+    var welcome = new Audio();
+    welcome.src = 'welcome.mp3';
+    var virus = new Audio();
+    virus.src = 'virus.mp3';  
+    var s = new Audio();
+    s.src = 'click.mp3';  
+</script>
+</html>
